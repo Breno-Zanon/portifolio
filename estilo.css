@@ -1,0 +1,296 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    color: rgb(0, 0, 0);
+}
+nav{
+    display: flex;
+    gap: 25px;
+    padding: 2rem 3rem;
+    justify-content: end;
+    background-color: #174E66;
+}
+.nav{
+    text-decoration: none;
+    color: white;
+    font-size: 20px;
+    text-transform: uppercase;
+    padding: 10px;
+    border-radius: 10px;
+    background-color: #5D7E8C;
+    border: 3px solid black;
+    transition: 0.5s all;
+    color: black;
+}
+.nav:hover{
+    transform: scale(1.1);
+}
+
+.cor-apresentação{
+    background-color: #96CCE3;
+}
+.apresentação{
+    display: flex;
+    max-width:  1100px;
+    margin: 0 auto;
+    padding: 20px;
+    align-items: center;
+    gap: 50px;
+}
+.apresentação h1{
+    font-size: 40px;
+    padding: 1em;
+}
+.apresentação p{
+    font-size: 20px;
+    margin-bottom: 2em;
+}
+.apresentação img{
+    width: 280px;
+    border-radius: 50%;
+    border: 3px solid black;
+    margin-top: 2em;
+
+}
+.apresentação a{
+    text-decoration: none;
+    color: black;
+    font-size: 20px;
+    text-transform: uppercase;
+    background-color: #5D7E8C;
+    padding: 10px;
+    border: 3px solid black;
+    border-radius: 10px;
+    
+}
+.curriculo{
+    text-align: center;
+    transition: 0.5s;
+}
+.curriculo:hover{
+    transform: scale(1.1);
+}
+.cor-sobre-mim{
+    background-color: #96CCE3;
+}
+.sobre-mim{
+    max-width:  1100px;
+    margin: 0 auto;
+    padding: 20px;
+}
+.sobre-mim h1{
+    font-size: 35px;
+    text-align: center;
+    padding: 1em
+}
+.sobre-mim p{
+    font-size: 20px;
+    text-align: justify;
+    margin-bottom: 3em;
+}
+.cor-projetos{
+    background: linear-gradient(#96CCE3, #76A0B3);
+}
+.projetos{
+    max-width:  1100px;
+    margin: 0 auto;
+    padding: 20px;
+}
+.projetos h1{
+    text-align: center;
+    font-size: 40px;
+    margin-bottom: 1em;
+}
+.projetos a{
+    text-decoration: none;
+    color: black;
+    transition: 0.5s all; 
+}
+.projetos a:hover{
+    transform: scale(1.1);
+    transition: 0.5s;
+}
+.meus-projetos{
+    max-width:  1100px;
+    margin: 0 auto;
+    padding: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 30px;
+}
+.meus-projetos h1{
+    font-size: 40px;
+    text-align: center;
+    margin-bottom: 1em;
+}
+.meus-projetos h2{
+    font-size: 30px;
+    padding: 10px 0;
+}
+.meus-projetos p{
+    font-size: 20px;
+}
+.meus-projetos img{
+    width: 150px;
+    border-radius: 10px;
+}
+.barbearia-alura, .mario, .florianopolis{
+    height: 400px;
+    width: 250px;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    border: 3px solid black;
+    padding: 20px;
+    border-radius: 10px;
+    background-color: #5D7E8C;
+    color: black;
+    margin-bottom: 2em;
+}
+.cor-certificados{
+    background-color: #76A0B3	;
+}
+.certificados{
+    max-width:  1100px;
+    margin: 0 auto;
+    padding: 20px;
+}
+.certificados h1{
+    font-size: 40px;
+    text-align: center;
+    margin-bottom: 1em;
+}
+.certificados p{
+    font-size: 20px;
+    text-align: center;
+    margin-bottom: 2em;
+}
+.certificados a{
+    font-size: 20px;
+    text-transform: uppercase;
+    padding: 10px;
+    text-decoration: none;
+    color: black;
+    background-color: #5D7E8C;
+    border-radius: 10px;
+    border: 3px solid black;
+    
+}
+.botao-certificado{
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    margin: 0 auto;
+    transition: 0.5s all;
+    margin-bottom: 2em;
+}
+.botao-certificado:hover{
+    transform: scale(1.1);
+}
+footer{
+    background-color: #174E66 ;
+    text-align: center;
+}
+footer img{
+    width: 100px;
+    transition: 0.5s all;
+    padding: 30px;
+}
+footer img:hover{
+    transform: scale(1.1);
+}
+footer p{
+    color: white;
+    font-size: 20px;
+    padding-bottom: 20px;
+}
+
+@media screen and (max-width: 700px){
+    .apresentação, .sobre-mim, .projetos, .certificados{
+        margin: auto;
+        width: 100%;
+        flex-direction: column;
+    }
+    .apresentação{
+        align-items: center;
+        justify-content: center;
+        flex-direction: column;
+    }
+    .apresentação h1{
+        text-align: center;
+        padding: 10px 0;
+        margin-bottom: 1em;
+    }
+    .apresentação img{
+        margin-bottom: 2em;
+    }
+    .apresentação p{
+        text-align: center;
+    }
+    nav{
+        width: 100%;
+        flex-direction: column;
+    }
+    .meus-projetos{
+        width: 100%;
+        flex-direction: column;
+    }
+}
+
+.cor-pg-certificados{
+    background: linear-gradient(#96CCE3, #76A0B3);
+}
+.certificados-pg{
+    max-width:  1100px;
+    margin: 0 auto;
+    padding: 20px;
+}
+.certificados-pg h1{
+    font-size: 40px;
+    text-align: center;
+    margin-bottom: 1em;
+}
+.certificados-pg p{
+    font-size: 20px;
+    text-align: center;
+    margin-bottom: 2em;
+}
+.certificado-alura{
+    text-align: center;
+}
+.certificado-alura img{
+    width: 350px;
+    height: 250px;
+    transition: 0.5s;
+    border-radius: 10px;
+    margin-bottom: 2em;
+}
+.certificado-alura img:hover{
+    transform: scale(1.1);
+}
+.voltar a{
+    font-size: 20px;
+    text-transform: uppercase;
+    padding: 10px;
+    text-decoration: none;
+    color: black;
+    background-color: #5D7E8C;
+    border-radius: 10px;
+    border: 3px solid black;
+}
+.voltar{
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    margin: 0 auto;
+    transition: 0.5s all;
+    margin-bottom: 2em;
+}
+.voltar:hover{
+    transform: scale(1.1);
+}
+
